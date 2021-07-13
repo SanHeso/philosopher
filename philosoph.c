@@ -6,7 +6,7 @@
 /*   By: hnewman <hnewman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 16:00:38 by hnewman           #+#    #+#             */
-/*   Updated: 2021/07/11 19:18:53 by hnewman          ###   ########.fr       */
+/*   Updated: 2021/07/13 19:16:58 by hnewman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,13 +87,13 @@ int	parser(int argc, char **argv, t_all *all)
 	while (i < argc)
 	{
 		val = ft_atoi_mod(argv[i]);
-		if (i == 1 && val != -1)
+		if (i == 1 && (val >= 0 && val <= 200))
 			all->num_of_phil = val;
-		else if (i == 2 && val != -1)
+		else if (i == 2 && val != -1 && val >= 60)
 			all->time_to_die = val;
-		else if (i == 3 && val != -1)
+		else if (i == 3 && val != -1 && val >= 60)
 			all->time_to_eat = val;
-		else if (i == 4 && val != -1)
+		else if (i == 4 && val != -1 && val >= 60)
 			all->time_to_sleep = val;
 		else if (i == 5 && val != -1)
 			all->must_eat = val;

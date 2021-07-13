@@ -6,7 +6,7 @@
 /*   By: hnewman <hnewman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 19:18:06 by hnewman           #+#    #+#             */
-/*   Updated: 2021/07/11 19:56:30 by hnewman          ###   ########.fr       */
+/*   Updated: 2021/07/12 19:22:42 by hnewman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	memfree(t_all *all)
 		i++;
 	}
 	pthread_mutex_destroy(&all->print);
+	free(all->fork);
+	free(all->phil);
 	free(all);
 }
 

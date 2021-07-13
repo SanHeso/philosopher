@@ -6,7 +6,7 @@
 /*   By: hnewman <hnewman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 16:01:36 by hnewman           #+#    #+#             */
-/*   Updated: 2021/07/11 19:07:03 by hnewman          ###   ########.fr       */
+/*   Updated: 2021/07/13 19:55:24 by hnewman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,6 @@ void				status(t_phlsph *phil, char *color, char *str);
 void				*life_of_a_phil(void *arr);
 void				distr_fork(t_phlsph *phil, pthread_mutex_t *fork);
 int					philo_lunch_begin(t_all *all);
+void				ft_putnbr(int nb);
 
 #endif
